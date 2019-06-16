@@ -1,0 +1,20 @@
+{
+    "appName": "eventgo",
+    "roleName": "pinpointLambdaRole7a8bfaaf",
+    "cloudWatchPolicyName": "cloudWatchPolicy7a8bfaaf",
+    "pinpointPolicyName": "pinpointPolicy7a8bfaaf",
+    "authPolicyName": "pinpoint_amplify_7a8bfaaf",
+    "unauthPolicyName": "pinpoint_amplify_7a8bfaaf",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
