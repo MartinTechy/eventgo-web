@@ -1,27 +1,47 @@
-# EventgoWeb
+# EventGo Web
+The repository for the EventGo web application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+* [Contribute on the application](#contribute-on-the-application)
+* [License](#license)
 
-## Development server
+## Contribute on the application
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Prerequisites
 
-## Code scaffolding
+ - [Git](https://git-scm.com/downloads) 
+ - [Node.js®](https://nodejs.org/en/) version 12.4.x or later
+ - [AWS Amplify CLI](https://github.com/aws-amplify/amplify-cli) configured with your credentials
+ - [Angular CLI](https://cli.angular.io/) version 8.0.x or later
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Setup 
 
-## Build
+1. Clone this repository to a local folder
+    ```bash
+    git clone https://github.com/MartinTechy/eventgo-web.git
+    ```
+2. Move to the newly created repository
+    ```bash
+    mv ./eventgo-web
+    ```
+3. Install all the dependencies 
+    ```bash
+    npm install
+    ```
+4. Configure the Amplify project 
+    ```bash
+    amplify configure project
+    ```
+5. Pull the latest version of the amplify project
+    ```bash
+    amplify env pull
+    ```
+6. Start the project 
+    ```bash 
+    ng serve
+    ```
+7. Develop !
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## License
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Licensed under the [GPL-3.0](LICENSE) license.
