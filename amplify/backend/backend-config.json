@@ -1,14 +1,17 @@
 {
 	"auth": {
-		"eventgo9cb3dcc0": {
+		"eventgoappae801024": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation"
 		}
 	},
-	"analytics": {
+	"api": {
 		"eventgo": {
-			"service": "Pinpoint",
-			"providerPlugin": "awscloudformation"
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "AMAZON_COGNITO_USER_POOLS"
+			}
 		}
 	}
 }
