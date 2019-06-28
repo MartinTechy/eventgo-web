@@ -3,14 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import Auth from '@aws-amplify/auth';
+
+import {AmplifyAngularModule, AmplifyService, AmplifyModules} from 'aws-amplify-angular';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AmplifyAngularModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: AmplifyService,
+      useFactory:  () => {
+        return AmplifyModules({
+          Auth
+        });
+      }
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
